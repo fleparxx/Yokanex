@@ -212,6 +212,10 @@ class YtDlpGUI(tk.Tk):
         self.after(120, self._poll_logs)
 
 
-if __name__ == "__main__":
+def main() -> None:
     app = YtDlpGUI()
     app.mainloop()
+
+
+if __name__ == "__main__":
+    main()

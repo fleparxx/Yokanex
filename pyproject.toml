@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ytdlp-gui"
+version = "0.1.0"
+description = "Interfaz gráfica simple para yt-dlp usando Tkinter"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Yokanex" }]
+license = { text = "MIT" }
+keywords = ["yt-dlp", "gui", "tkinter", "downloader"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Topic :: Multimedia :: Video",
+]
+dependencies = []
+
+[project.scripts]
+ytdlp-gui = "ytdlp_gui:main"
+
+[tool.setuptools]
+py-modules = ["ytdlp_gui"]

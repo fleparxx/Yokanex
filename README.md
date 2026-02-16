@@ -13,11 +13,34 @@ Instalación de `yt-dlp`:
 python -m pip install -U yt-dlp
 ```
 
-## Ejecutar
+## Ejecutar (modo simple)
 
 ```bash
 python ytdlp_gui.py
 ```
+
+## Publicarlo / distribuirlo como paquete
+
+1. Instalar el proyecto en modo editable:
+
+```bash
+python -m pip install -e .
+```
+
+2. Ejecutar con comando global del paquete:
+
+```bash
+ytdlp-gui
+```
+
+3. Construir artefactos para publicación (wheel/sdist):
+
+```bash
+python -m pip install -U build
+python -m build
+```
+
+Esto genera `dist/*.whl` y `dist/*.tar.gz` listos para publicar (por ejemplo en PyPI o GitHub Releases).
 
 ## Funciones
 
